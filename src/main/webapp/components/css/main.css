@@ -1,0 +1,626 @@
+
+/*
+ *
+ * REGION LOGIN
+ *
+ */
+
+.centered-flex-column {
+    min-height: 100vh;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f2f2f2;
+}
+
+.form-signin {
+    position: relative;
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 77px 55px;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-signin .form-signin-heading {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
+
+.form-signin input {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 40px;
+    height: 45px;
+}
+
+.form-signin input:focus {
+    box-shadow: none;
+    border-width:  3px;
+    -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+}
+
+.form-signin .btn {
+    position: relative;
+    border-radius: 25px;
+    border: 0;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: transparent;
+    overflow: hidden;
+}
+
+.form-signin .btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    width: 300%;
+    height: 100%;
+    border-radius: 25px;
+    z-index: 0;
+    background: -webkit-linear-gradient(right, #2ac511, #a6ff21, #21c6fd, #42c249);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.form-signin .btn:hover:before {
+    left: 0;
+}
+
+.form-signin .btn:focus,
+.form-signin .btn:active {
+    box-shadow: none;
+}
+
+.form-signin .btn span {
+    z-index: 1;
+    position: relative;
+}
+
+.help-block {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*
+ *
+ * ENDREGION LOGIN
+ *
+ */
+
+/*
+ *
+ * REGION PRODUCTS GRID
+ *
+ */
+
+#products-wrapper > .row {
+    align-items: flex-start;
+}
+
+.item {
+    padding: 10px;
+    border: 10px solid #fff;
+    background: #fafafa;
+}
+
+@media (max-width: var(--breakpoint-lg)) {
+    .item {
+        border: 7px solid #fff;
+    }
+}
+
+@media (max-width: var(--breakpoint-md)) {
+    .item {
+        border: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.list-group-item-heading a {
+    color: #1a1a1a;
+}
+
+.list-group-item-heading a:hover,
+.list-group-item-heading a:active,
+.list-group-item-heading a:focus {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.item label {
+    display: block;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.item span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.item *:not(p) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*
+ *
+ * ENDREGION PRODUCTS GRID
+ *
+ */
+
+/*
+ *
+ * REGION HEADER
+ *
+ */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: #31353d;
+    text-align: center;
+    z-index: 50;
+}
+
+#hamburger-menu,
+#cart-button {
+    height: 100%;
+    background: #26292f;
+    width: 60px;
+    cursor: pointer;
+}
+
+#hamburger-menu i,
+#cart-button i {
+    color: #fff;
+    line-height: 50px;
+    font-size: 28px;
+}
+
+#hamburger-menu:hover,
+#cart-button:hover {
+    background: #141414;
+}
+
+#hamburger-menu {
+    float: left;
+}
+
+#cart-button {
+    float: right;
+}
+
+/*
+ *
+ * ENDREGION HEADER
+ *
+ */
+
+/*
+ *
+ * REGION MAIN NAVBAR
+ *
+ */
+
+#header #main-nav {
+    display: inline-block;
+    float: right;
+}
+
+#header #main-nav ul {
+    margin-bottom: 0;
+}
+
+#header #main-nav li{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+#header #main-nav li:hover{
+    background: var(--secondary);
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+#main-nav .list-inline-item > a,
+#main-nav .list-inline-item > a:hover,
+#main-nav .list-inline-item > a:focus,
+#main-nav .list-inline-item > a:active {
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+
+#header #main-nav .list-inline-item > a {
+    color: var(--light);
+}
+
+#sidebar #main-nav .list-inline-item > a {
+    color: var(--dark);
+}
+
+#sidebar #main-nav ul {
+    margin-top: 1rem;
+}
+
+#sidebar #main-nav li {
+    display: block;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+#sidebar #main-nav li:hover > a{
+    color: var(--orange);
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+/*
+ *
+ * ENDREGION MAIN NAVBAR
+ *
+ */
+
+/*
+ *
+ * REGION SIDEBAR & CART COMMON
+ *
+ */
+
+body {
+    position: relative;
+    padding-top: 65px;
+    overflow-x: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+body.no-header {
+    padding-top: 0;
+}
+
+#overlay {
+    position: fixed;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(212, 213, 220, 0.6);
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+#overlay.is-visible {
+    display: block;
+    -webkit-animation: fade-in 0.3s;
+    -moz-animation: fade-in 0.3s;
+    animation: fade-in 0.3s;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#cart, #sidebar {
+    position: fixed;
+    top: 50px;
+    height: 100%;
+    width: 260px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 30;
+}
+
+#cart h2,
+#sidebar h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 1em 0;
+    padding: 0 1em;
+}
+
+#cart {
+    right: -100%;
+    background: #FFF;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: right 0.3s;
+}
+
+#sidebar {
+    left: -100%;
+    background: #FFF;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+}
+
+#cart.is-open {
+    right: 0;
+}
+
+#sidebar.is-open {
+    left: 0;
+}
+
+#sidebar::-webkit-scrollbar,
+#cart::-webkit-scrollbar {
+    display: none;
+}
+
+/*
+ *
+ * ENDREGION SIDEBAR & CART COMMON
+ *
+ */
+
+/*
+ *
+ * REGION CART
+ *
+ */
+
+#cart .cart-items li {
+    position: relative;
+    padding: 1em;
+    border-top: 1px solid #e0e6ef;
+}
+
+#cart .cart-items li:last-child {
+    border-bottom: 1px solid #e0e6ef;
+}
+
+#cart .cart-price {
+    color: #a5aebc;
+    margin-top: .4em;
+}
+
+#cart .cart-item-remove {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 0;
+    background: transparent;
+}
+
+#cart .cart-item-remove:hover {
+    background-color: #bd2130;
+    color: #fff;
+    cursor: pointer;
+}
+
+#cart .cart-total {
+    padding: 0.5em 1em;
+}
+
+#cart .cart-total span {
+    float: right;
+}
+
+#cart .cart-checkout {
+    border-radius: 0;
+}
+
+/*
+ *
+ * ENDREGION CART
+ *
+ */
+
+/*
+ *
+ * REGION SIDEBAR
+ *
+ */
+
+.sidebar-nav li {
+    position: relative;
+    line-height: 20px;
+    width: 100%;
+    padding: 6px 16px;
+}
+
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    color: #1a1a1a;
+    -webkit-transition: width .2s ease-in;
+    -moz-transition: width .2s ease-in;
+    -ms-transition: width .2s ease-in;
+    transition: width .2s ease-in;
+}
+
+.sidebar-nav li:nth-child(9n-8):before {
+    background-color: #afafaf;
+}
+
+.sidebar-nav li:nth-child(9n-7):before {
+    background-color: #ec1b5a;
+}
+
+.sidebar-nav li:nth-child(9n-6):before {
+    background-color: #79aefe;
+}
+
+.sidebar-nav li:nth-child(9n-5):before {
+    background-color: #314190;
+}
+
+.sidebar-nav li:nth-child(9n-4):before {
+    background-color: #279636;
+}
+
+.sidebar-nav li:nth-child(9n-3):before {
+    background-color: #7d5d81;
+}
+
+.sidebar-nav li:nth-child(9n-2):before {
+    background-color: #ead24c;
+}
+
+.sidebar-nav li:nth-child(9n-1):before {
+    background-color: #2d2366;
+}
+
+.sidebar-nav li:nth-child(9n):before {
+    background-color: #35acdf;
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .2s ease-in;
+    -moz-transition: width .2s ease-in;
+    -ms-transition: width .2s ease-in;
+    transition: width .2s ease-in;
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 10px 15px 10px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sidebar-nav li:hover a,
+.sidebar-nav li:active a,
+.sidebar-nav li:focus a {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 20px;
+    line-height: 44px;
+}
+
+/*
+ *
+ * ENDREGION SIDEBAR
+ *
+ */
+
+/*
+ *
+ * REGION ERROR
+ *
+ */
+
+.error-image {
+    max-width: 200px;
+}
+
+/*
+ *
+ * ENDREGION ERROR
+ *
+ */
+
+/*
+ *
+ * REGION ADMIN
+ *
+ */
+
+.table-default-link {
+    background: none;
+}
+
+.table-default-link:hover a {
+    color: #555555;;
+    text-decoration: none;
+}
+
+.v-resize {
+    overflow: hidden;
+    resize: vertical;
+}
+
+/*
+ *
+ * ENDREGION ADMIN
+ *
+ */

@@ -1,0 +1,366 @@
+ERROR - Object with same identifier already exists
+ERROR - Object with same identifier already exists
+ERROR - Object with same identifier already exists
+ERROR - No keys were generated: entry was not written in DB
+ERROR - Duplicate entry 'batman' for key 'login'
+ERROR - Duplicate entry 'batman' for key 'login'
+ERROR - Generated keys not requested. You need to specify Statement.RETURN_GENERATED_KEYS to Statement.executeUpdate(), Statement.executeLargeUpdate() or Connection.prepareStatement().
+ERROR - Object with same identifier already exists
+ERROR - Unknown column 'user_uuid' in 'field list'
+ERROR - Unknown column 'user_uuid' in 'field list'
+ERROR - Duplicate entry '1f940bd3-f7a5-11e7-93e6-a30f6152aa28-2' for key 'PRIMARY'
+ERROR - Unknown column 'user_id' in 'where clause'
+ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 1 AND user_uuid = '34fa41df-f7a5-11e7-adbd-41982924721f'' at line 1
+ERROR - Unknown column 'id' in 'where clause'
+INFO - a
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't get object DB
+INFO - Trying to get connection form dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't get object DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't get object DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't get object DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't get object DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't get object DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't get object DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Can't insert into DB
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+INFO - Trying to get connection form dataSource
+INFO - Got connection from dataSource
+ERROR - Failed to get objects from DB: For input string: "156638d4-fab3-11e7-ad94-2b2421f23a42"
+ERROR - Таблица "PAYMENTS" не найдена
+Table "PAYMENTS" not found; SQL statement:
+select count(*) as count from payments; [42102-196]
+ERROR - Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+select count(*) as count from users; [42102-196]
+ERROR - Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+select count(*) as count from users; [42102-196]
+ERROR - Failed to get objects from DB: null
+ERROR - Failed to get objects from DB: null
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: java.lang.NullPointerException
+ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: null
+ERROR - java.lang.NullPointerException
+ERROR - Failed to get objects from DB: Параметр "#1" не установлен
+Parameter "#1" is not set; SQL statement:
+SELECT id, name FROM genres LIMIT ?,?; [90012-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a', 2)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 3)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 3)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 3)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 3)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 7)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 7)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'd74ec6d5-feb1-11e7-982f-25e096a99612' for key 'PRIMARY'
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 3)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 3)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 7)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 7)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 45)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 45)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to get objects from DB: Синтаксическая ошибка в выражении SQL "COMMON_SELECTWHERE[*] ID = ? LIMIT 1; "; ожидалось "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "COMMON_SELECTWHERE[*] ID = ? LIMIT 1; "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+COMMON_SELECTWHERE id = ? LIMIT 1; [42001-196]
+ERROR - Failed to get objects from DB: Синтаксическая ошибка в выражении SQL "COMMON_SELECT[*] WHERE ID = ? LIMIT 1; "; ожидалось "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"
+Syntax error in SQL statement "COMMON_SELECT[*] WHERE ID = ? LIMIT 1; "; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT, {"; SQL statement:
+COMMON_SELECT WHERE id = ? LIMIT 1; [42001-196]
+ERROR - Синтаксическая ошибка в выражении SQL "SELECT COUNT(*) AS COUNT FROM FROM[*] GENRES; "; ожидалось "identifier"
+Syntax error in SQL statement "SELECT COUNT(*) AS COUNT FROM FROM[*] GENRES; "; expected "identifier"; SQL statement:
+SELECT COUNT(*) AS count FROM from genres; [42001-196]
+ERROR - Failed to get objects from DB: Column 'id' in where clause is ambiguous
+ERROR - Failed to get objects from DB: Column 'id' in where clause is ambiguous
+ERROR - Failed to get objects from DB: Column 'id' in where clause is ambiguous
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
