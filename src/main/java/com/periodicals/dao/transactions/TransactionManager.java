@@ -2,7 +2,7 @@ package com.periodicals.dao.transactions;
 
 import com.periodicals.dao.connection.ConnectionManager;
 import com.periodicals.dao.connection.ConnectionWrapper;
-import com.periodicals.exceptions.TransactionException;
+import com.periodicals.utils.exceptions.TransactionException;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;

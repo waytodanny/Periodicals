@@ -1,56 +1,72 @@
 $(function () {
     'use strict';
 
-    var $main_nav = $('#main-nav'),
-        $sidebar = $('#sidebar'),
-        $cart = $('#cart'),
-        $cart_button = $('#cart-button'),
-        $hamburger_menu = $('#hamburger-menu'),
-        $overlay = $('#overlay'),
-        $header = $('#header');
+    /*
+     *  @CONSTANTS
+     */
+    const CLASS_OPEN = 'is-open',
+        CLASS_VISIBLE = 'is-visible',
+        LARGE_SCREEN = 992;
 
-    var _isOpenClass = 'is-open',
-        _isVisibleClass = 'is-visible',
-        _largeScreen = 992;
+    /*
+     *  @VARIABLES
+     */
+    var main_nav = $('#main-nav'),
+        sidebar = $('#sidebar'),
+        cart = $('#cart'),
+        cart_button = $('#cart-button'),
+        hamburger_menu = $('#hamburger-menu'),
+        overlay = $('#overlay'),
+        header = $('#header');
 
-    $hamburger_menu.on('click', function(){
-        $cart.removeClass(_isOpenClass);
-        toggle_panel_visibility($sidebar, $overlay);
+    /*
+     *  @EVENTS
+     */
+    hamburger_menu.on('click', function () {
+        cart.removeClass(CLASS_OPEN);
+        togglePanelVisibility(sidebar);
     });
 
-    $cart_button.on('click', function(){
-        $sidebar.removeClass(_isOpenClass);
-        toggle_panel_visibility($cart, $overlay);
+    cart_button.on('click', function () {
+        sidebar.removeClass(CLASS_OPEN);
+        togglePanelVisibility(cart);
     });
 
-    $overlay.on('click', function(){
-        $overlay.removeClass(_isVisibleClass);
-        $sidebar.removeClass(_isOpenClass);
-        $cart.removeClass(_isOpenClass);
+    overlay.on('click', function () {
+        overlay.removeClass(CLASS_VISIBLE);
+        sidebar.removeClass(CLASS_OPEN);
+        cart.removeClass(CLASS_OPEN);
     });
 
-    move_navigation($main_nav, _largeScreen);
-    $(window).on('resize', function(){
-        move_navigation($main_nav, _largeScreen);
+    $(window).on('resize', function () {
+        setNavigationPosition(main_nav);
     });
 
-    function toggle_panel_visibility ($panel) {
-        if( $panel.hasClass(_isOpenClass) ) {
-            $panel.removeClass(_isOpenClass);
-            $overlay.removeClass(_isVisibleClass);
+    /*
+     *  @FUNCTIONS
+     */
+    function togglePanelVisibility(panel) {
+        if (panel.hasClass(CLASS_OPEN)) {
+            panel.removeClass(CLASS_OPEN);
+            overlay.removeClass(CLASS_VISIBLE);
         } else {
-            $panel.addClass(_isOpenClass);
-            $overlay.addClass(_isVisibleClass);
+            panel.addClass(CLASS_OPEN);
+            overlay.addClass(CLASS_VISIBLE);
         }
     }
 
-    function move_navigation($navigation, $size_condition) {
-        if ($(window).width() >= $size_condition) {
-            $navigation.detach();
-            $navigation.appendTo($header);
+    function setNavigationPosition(navigation) {
+        if ($(window).width() >= LARGE_SCREEN) {
+            navigation.detach();
+            navigation.appendTo(header);
         } else {
-            $navigation.detach();
-            $navigation.prependTo($sidebar);
+            navigation.detach();
+            navigation.prependTo(sidebar);
         }
     }
+
+    /*
+     *  @INIT
+     */
+    setNavigationPosition(main_nav);
 });

@@ -4,7 +4,7 @@ import com.periodicals.dao.connection.ConnectionManager;
 import com.periodicals.dao.connection.ConnectionWrapper;
 import com.periodicals.dao.interfaces.PeriodicalsDao;
 import com.periodicals.entities.*;
-import com.periodicals.exceptions.DaoException;
+import com.periodicals.utils.exceptions.DaoException;
 import com.periodicals.utils.propertyManagers.AttributesPropertyManager;
 import com.periodicals.utils.resourceHolders.JdbcQueriesHolder;
 

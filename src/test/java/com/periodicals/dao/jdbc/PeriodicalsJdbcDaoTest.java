@@ -4,9 +4,9 @@ import com.periodicals.dao.factories.JdbcDaoFactory;
 import com.periodicals.entities.Genre;
 import com.periodicals.entities.Periodical;
 import com.periodicals.entities.Publisher;
-import com.periodicals.exceptions.DaoException;
+import com.periodicals.utils.exceptions.DaoException;
 import org.junit.jupiter.api.*;
-import util.H2Manager;
+import util.H2ConnectionManager;
 
 import java.math.BigDecimal;
 import java.sql.SQLException;
@@ -16,7 +16,7 @@ import java.util.UUID;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PeriodicalsJdbcDaoTest {
-    private static final H2Manager testDbManager = H2Manager.getInstance();
+    private static final H2ConnectionManager testDbManager = H2ConnectionManager.getInstance();
 
     private static final GenresJdbcDao genresDao =
             (GenresJdbcDao) JdbcDaoFactory.getInstance().getGenresDao();
@@ -50,12 +50,12 @@ class PeriodicalsJdbcDaoTest {
 
     @BeforeAll
     static void beforeAll() {
-        H2Manager.initH2ConnectionPool();
+        H2ConnectionManager.initH2ConnectionPool();
     }
 
     @AfterAll
     static void afterAll() {
-        H2Manager.releaseDataSource();
+        H2ConnectionManager.releaseDataSource();
     }
 
     @BeforeEach
@@ -139,34 +139,4 @@ class PeriodicalsJdbcDaoTest {
             int result = periodicalsDao.getPeriodicalsByGenreCount(null);
         });
     }
-
-//    @Test
-//    void getPeriodicalsByPaymentList() {
-//
-//    }
-//
-//    @Test
-//    void getPeriodicalsByUserList() {
-//
-//    }
-//
-//    @Test
-//    void getPeriodicalsByUserListBounded() {
-//
-//    }
-//
-//    @Test
-//    void getPeriodicalsByUserCount() {
-//
-//    }
-//
-//    @Test
-//    void getIsUserSubscribedOnPeriodical() {
-//
-//    }
-//
-//    @Test
-//    void addUserSubscriptions() {
-//
-//    }
 }

@@ -101,13 +101,3 @@ values
 ('cf8c14b2-feb1-11e7-ba96-313a67f5f27a','Newspaper'),
 ('d74ec6d5-feb1-11e7-982f-25e096a99612','Magazine'),
 ('dd8fe15f-feb1-11e7-a1da-4f1c9ba93af5','Manga');
-
-Insert into publishers(id, name)
-values
-('fc13ecc9-feb1-11e7-8a29-d5a2d48a37f0','Marvel'),
-('02e0cc80-feb2-11e7-9fc8-b3d2dbb83666','Dc'),
-('071f393a-feb2-11e7-aecc-9f817ec5c610','Georgy Kongadze'),
-('0e5eb194-feb2-11e7-87e1-a9292c8cf57a','Interfrax-Ukraine'),
-('12df09a2-feb2-11e7-9338-8fd21bd343e0','ItCollab'),
-('174b8b0b-feb2-11e7-aa99-354294c62297','Fashion World'),
-('1c36da35-feb2-11e7-b255-a18dad24e342','Masasi Kishimoto');

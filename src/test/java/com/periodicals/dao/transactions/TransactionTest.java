@@ -3,10 +3,10 @@ package com.periodicals.dao.transactions;
 import com.periodicals.dao.factories.JdbcDaoFactory;
 import com.periodicals.dao.jdbc.GenresJdbcDao;
 import com.periodicals.entities.Genre;
-import com.periodicals.exceptions.DaoException;
-import com.periodicals.exceptions.TransactionException;
+import com.periodicals.utils.exceptions.DaoException;
+import com.periodicals.utils.exceptions.TransactionException;
 import org.junit.jupiter.api.*;
-import util.H2Manager;
+import util.H2ConnectionManager;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class TransactionTest {
-    private static final H2Manager testDbManager = H2Manager.getInstance();
+    private static final H2ConnectionManager testDbManager = H2ConnectionManager.getInstance();
 
     private static final GenresJdbcDao genresDao =
             (GenresJdbcDao) JdbcDaoFactory.getInstance().getGenresDao();
@@ -39,12 +39,12 @@ class TransactionTest {
 
     @BeforeAll
     static void beforeAll() {
-        H2Manager.initH2ConnectionPool();
+        H2ConnectionManager.initH2ConnectionPool();
     }
 
     @AfterAll
     static void afterAll() {
-        H2Manager.releaseDataSource();
+        H2ConnectionManager.releaseDataSource();
     }
 
     @BeforeEach

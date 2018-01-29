@@ -14,7 +14,7 @@ $(function () {
                     getMessageWrapper(successMessage).appendTo(messageBox);
                 }
             },
-            fail: function () {
+            error: function () {
                 var failMessage = caller.attr('fail-message');
                 if (messageBox.length && failMessage) {
                     getMessageWrapper(failMessage).appendTo(messageBox);

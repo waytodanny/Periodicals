@@ -2,56 +2,71 @@ package com.periodicals.dao.jdbc;
 
 import com.periodicals.dao.factories.JdbcDaoFactory;
 import com.periodicals.entities.Genre;
-import com.periodicals.exceptions.DaoException;
+import com.periodicals.utils.exceptions.DaoException;
 import org.junit.jupiter.api.*;
-import util.H2Manager;
+import util.H2ConnectionManager;
 
 import java.sql.SQLException;
 import java.util.List;
 import java.util.UUID;
 
+import static com.periodicals.utils.resourceHolders.AttributesHolder.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GenresJdbcDaoTest {
 
-    private static final H2Manager testDbManager = H2Manager.getInstance();
+    private static final H2ConnectionManager testDbManager = H2ConnectionManager.getInstance();
     private static final GenresJdbcDao genresDao =
             (GenresJdbcDao) JdbcDaoFactory.getInstance().getGenresDao();
 
-    private static final String INSERT_FILE_PATH = "src\\test\\resources\\genres_Insert_Defaults.sql";
+    private static final String INSERT_DEFAULTS_FILE_PATH =
+            "src\\test\\resources\\genres_Insert_Defaults.sql";
+
     private static final String TABLE_NAME = "genres";
 
     private static final int EXPECTED_ENTRIES_COUNT = 2;
 
     private static final UUID TEST_GENRE_ID = UUID.fromString("86ed52aa-0158-11e8-b7ab-e500aed34992");
     private static final String TEST_GENRE_NAME = "newGenre";
-    private static final Genre TEST_GENRE = new Genre(TEST_GENRE_ID, TEST_GENRE_NAME);
 
-    private static final UUID EXISTED_GENRE_1_ID = UUID.fromString("c1fae08d-feb1-11e7-8e6b-313d4bf1847c");
-    private static final String EXISTED_GENRE_1_NAME = "comics";
-    private static final Genre EXISTED_GENRE_1 = new Genre(EXISTED_GENRE_1_ID, EXISTED_GENRE_1_NAME);
+    private static final Genre TEST_GENRE = new Genre(
+            UUID.fromString("86ed52aa-0158-11e8-b7ab-e500aed34992"),
+            "newGenre"
+    );
 
-    private static final UUID EXISTED_GENRE_2_ID = UUID.fromString("cf8c14b2-feb1-11e7-ba96-313a67f5f27a");
-    private static final String EXISTED_GENRE_2_NAME = "newspaper";
-    private static final Genre EXISTED_GENRE_2 = new Genre(EXISTED_GENRE_2_ID, EXISTED_GENRE_2_NAME);
+    private static final UUID EXISTED_GENRE_COMICS_ID = UUID.fromString("c1fae08d-feb1-11e7-8e6b-313d4bf1847c");
+    private static final String EXISTED_GENRE_COMICS_NAME = "comics";
+
+    private static final Genre EXISTED_GENRE_COMICS = new Genre(
+            EXISTED_GENRE_COMICS_ID,
+            EXISTED_GENRE_COMICS_NAME
+    );
+
+    private static final UUID EXISTED_GENRE_NEWSPAPER_ID = UUID.fromString("cf8c14b2-feb1-11e7-ba96-313a67f5f27a");
+    private static final String EXISTED_GENRE_NEWSPAPER_NAME = "newspaper";
+
+    private static final Genre EXISTED_GENRE_NEWSPAPER = new Genre(
+            EXISTED_GENRE_NEWSPAPER_ID,
+            EXISTED_GENRE_NEWSPAPER_NAME
+    );
 
     private static Genre sameGenre;
 
     @BeforeAll
     static void beforeAll() {
-        H2Manager.initH2ConnectionPool();
+        H2ConnectionManager.initH2ConnectionPool();
         sameGenre = null;
     }
 
 
     @AfterAll
     static void afterAll() {
-        H2Manager.releaseDataSource();
+        H2ConnectionManager.releaseDataSource();
     }
 
     @BeforeEach
     void setUp() {
-        testDbManager.executeSQLScriptsFromFile(INSERT_FILE_PATH);
+        testDbManager.executeSQLScriptsFromFile(INSERT_DEFAULTS_FILE_PATH);
     }
 
     @AfterEach
@@ -61,13 +76,13 @@ class GenresJdbcDaoTest {
         TEST_GENRE.setId(TEST_GENRE_ID);
         TEST_GENRE.setName(TEST_GENRE_NAME);
 
-        EXISTED_GENRE_1.setId(EXISTED_GENRE_1_ID);
-        EXISTED_GENRE_1.setName(EXISTED_GENRE_1_NAME);
+        EXISTED_GENRE_COMICS.setId(EXISTED_GENRE_COMICS_ID);
+        EXISTED_GENRE_COMICS.setName(EXISTED_GENRE_COMICS_NAME);
 
-        EXISTED_GENRE_2.setId(EXISTED_GENRE_2_ID);
-        EXISTED_GENRE_2.setName(EXISTED_GENRE_2_NAME);
+        EXISTED_GENRE_NEWSPAPER.setId(EXISTED_GENRE_NEWSPAPER_ID);
+        EXISTED_GENRE_NEWSPAPER.setName(EXISTED_GENRE_NEWSPAPER_NAME);
 
-        testDbManager.truncateTable(TABLE_NAME);
+        testDbManager.truncateTable(GENRES_TABLE_NAME);
     }
 
     /**
@@ -75,10 +90,10 @@ class GenresJdbcDaoTest {
      */
     @Test
     void getEntityByPrimaryKey_existing_key_success() throws DaoException {
-        Genre resultGenre = genresDao.getEntityByPrimaryKey(EXISTED_GENRE_1_ID);
+        Genre resultGenre = genresDao.getEntityByPrimaryKey(EXISTED_GENRE_COMICS_ID);
 
         assertNotNull(resultGenre);
-        assertEquals(EXISTED_GENRE_1, resultGenre);
+        assertEquals(EXISTED_GENRE_COMICS, resultGenre);
     }
 
     @Test
@@ -114,15 +129,15 @@ class GenresJdbcDaoTest {
     void updateEntity_existed_success() throws DaoException {
         String newName = "newName";
 
-        Genre updatableGenre = genresDao.getEntityByPrimaryKey(EXISTED_GENRE_1.getId());
+        Genre updatableGenre = genresDao.getEntityByPrimaryKey(EXISTED_GENRE_COMICS.getId());
 
         assertNotNull(updatableGenre);
-        assertEquals(EXISTED_GENRE_1_NAME, updatableGenre.getName());
+        assertEquals(EXISTED_GENRE_COMICS_NAME, updatableGenre.getName());
 
         updatableGenre.setName(newName);
         genresDao.updateEntity(updatableGenre);
 
-        updatableGenre = genresDao.getEntityByPrimaryKey(EXISTED_GENRE_1.getId());
+        updatableGenre = genresDao.getEntityByPrimaryKey(EXISTED_GENRE_COMICS.getId());
         assertNotNull(updatableGenre);
         assertEquals(newName, updatableGenre.getName());
     }
@@ -139,13 +154,13 @@ class GenresJdbcDaoTest {
      */
     @Test
     void deleteEntity_existed_success() throws DaoException {
-        Genre deletableGenre = genresDao.getEntityByPrimaryKey(EXISTED_GENRE_1.getId());
+        Genre deletableGenre = genresDao.getEntityByPrimaryKey(EXISTED_GENRE_COMICS.getId());
         assertNotNull(deletableGenre);
 
         genresDao.deleteEntity(deletableGenre);
 
         Assertions.assertThrows(DaoException.class, () -> {
-            genresDao.getEntityByPrimaryKey(EXISTED_GENRE_1.getId());
+            genresDao.getEntityByPrimaryKey(EXISTED_GENRE_COMICS.getId());
         });
     }
 
@@ -173,7 +188,7 @@ class GenresJdbcDaoTest {
         List<Genre> allGenres = genresDao.getEntityCollection();
 
         assertEquals(EXPECTED_ENTRIES_COUNT, allGenres.size());
-        assertTrue(allGenres.contains(EXISTED_GENRE_1));
+        assertTrue(allGenres.contains(EXISTED_GENRE_COMICS));
     }
 
     /**
@@ -188,8 +203,8 @@ class GenresJdbcDaoTest {
 
         assertEquals(limit, genres.size());
 
-        assertFalse(genres.contains(EXISTED_GENRE_1));
-        assertTrue(genres.contains(EXISTED_GENRE_2));
+        assertFalse(genres.contains(EXISTED_GENRE_COMICS));
+        assertTrue(genres.contains(EXISTED_GENRE_NEWSPAPER));
     }
 
     @Test

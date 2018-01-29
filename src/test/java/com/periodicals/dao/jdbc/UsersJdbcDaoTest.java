@@ -3,9 +3,9 @@ package com.periodicals.dao.jdbc;
 import com.periodicals.dao.factories.JdbcDaoFactory;
 import com.periodicals.entities.Role;
 import com.periodicals.entities.User;
-import com.periodicals.exceptions.DaoException;
+import com.periodicals.utils.exceptions.DaoException;
 import org.junit.jupiter.api.*;
-import util.H2Manager;
+import util.H2ConnectionManager;
 
 import java.sql.SQLException;
 import java.util.UUID;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class UsersJdbcDaoTest {
 
-    private static final H2Manager testDbManager = H2Manager.getInstance();
+    private static final H2ConnectionManager testDbManager = H2ConnectionManager.getInstance();
     private static final UsersJdbcDao usersDao =
             (UsersJdbcDao) JdbcDaoFactory.getInstance().getUsersDao();
 
@@ -35,18 +35,18 @@ class UsersJdbcDaoTest {
 
     @BeforeAll
     static void beforeAll(){
-        H2Manager.initH2ConnectionPool();
+        H2ConnectionManager.initH2ConnectionPool();
 
         EXISTED_USER.setId( UUID.fromString("1f940bd3-f7a5-11e7-93e6-a30f6152aa28"));
         EXISTED_USER.setLogin("user");
-        EXISTED_USER.setPassword("pass");
+        EXISTED_USER.setPassword("1A1DC91C907325C69271DDF0C944BC72");
         EXISTED_USER.setEmail("email@gmail.com");
         EXISTED_USER.setRole(ADMIN_ROLE);
     }
 
     @AfterAll
     static void afterAll() {
-        H2Manager.releaseDataSource();
+        H2ConnectionManager.releaseDataSource();
     }
 
     @BeforeEach

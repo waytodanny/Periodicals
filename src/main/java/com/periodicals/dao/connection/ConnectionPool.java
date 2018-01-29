@@ -2,6 +2,7 @@ package com.periodicals.dao.connection;
 
 import org.apache.log4j.Logger;
 
+import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -51,24 +52,7 @@ public class ConnectionPool {
      */
     private static DataSource getRootDataSource() {
         try {
-//            RootDataSourceManager manager = RootDataSourceManager.getInstance();
-//
-//            BasicDataSource dataSource = new BasicDataSource();
-//            dataSource.setDriverClassName(manager.getDbDriver());
-//            dataSource.setUrl(manager.getJdbcUrl());
-//            dataSource.setUsername(manager.getDbUserLogin());
-//            dataSource.setPassword(manager.getDbUserPass());
-//
-//            dataSource.setInitialSize(10);
-//
-//            /*max number of opened connections per time*/
-//            dataSource.setMaxTotal(10);
-//
-//            String connProps = manager.getConnectionProperties();
-//            if (connProps != null) {
-//                dataSource.setConnectionProperties(connProps);
-//            }
-            InitialContext initialContext = new InitialContext();
+            Context initialContext = new InitialContext();
             return (DataSource) initialContext.lookup("java:comp/env/jdbc/periodicals");
         } catch (Exception e) {
             throw new IllegalStateException();

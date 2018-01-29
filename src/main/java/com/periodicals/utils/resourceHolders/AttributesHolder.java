@@ -6,7 +6,7 @@ import com.periodicals.utils.propertyManagers.AttributesPropertyManager;
  * Holds attributes values from attributes.properties file
  */
 public class AttributesHolder {
-    public static final String ATTR_COMMAND = "command";
+    public static final String ATTR_COMMAND = "commands";
 
     public static final String SERVLET_ROOT = AttributesPropertyManager.getProperty("servlet.root");
 
@@ -61,7 +61,7 @@ public class AttributesHolder {
     public static final String PAGE_SUFFIX = AttributesPropertyManager.getProperty("page.suffix");
 
     /*Request attributes*/
-    public static final String COMMAND = "command";
+    public static final String COMMAND = "commands";
     public static final String ATTR_USER = AttributesPropertyManager.getProperty("attr.user");
 
     public static final String ATTR_LOGIN = AttributesPropertyManager.getProperty("attr.login");

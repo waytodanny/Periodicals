@@ -1,7 +1,7 @@
 package com.periodicals.filters;
 
-import com.periodicals.authentification.AuthenticationHelper;
-import com.periodicals.security.SecurityConfiguration;
+import com.periodicals.utils.authentification.AuthenticationHelper;
+import com.periodicals.utils.security.SecurityConfiguration;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -19,11 +19,11 @@ import static com.periodicals.utils.resourceHolders.PagesHolder.LOGIN_PAGE;
  * <p>
  * Filter that:
  * 1) checks incoming request;
- * 2) pulls out command value;
- * 3) due to command access level decides what to do with request.
+ * 2) pulls out commands value;
+ * 3) due to commands access level decides what to do with request.
  * Uses SecurityConfiguration class to get commands access levels
  * @see SecurityConfiguration
- * @see com.periodicals.command.util.Command
+ * @see com.periodicals.commands.util.Command
  */
 @WebFilter(urlPatterns = {"/*"})
 public class AccessFilter implements Filter {
@@ -101,7 +101,7 @@ public class AccessFilter implements Filter {
     }
 
     /**
-     * Finds command in requested path in possible command list
+     * Finds commands in requested path in possible commands list
      *
      * @see SecurityConfiguration
      */

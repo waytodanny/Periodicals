@@ -3,7 +3,7 @@ package com.periodicals.dao.jdbc;
 import com.periodicals.dao.interfaces.UsersDao;
 import com.periodicals.entities.Role;
 import com.periodicals.entities.User;
-import com.periodicals.exceptions.DaoException;
+import com.periodicals.utils.exceptions.DaoException;
 import com.periodicals.utils.propertyManagers.AttributesPropertyManager;
 import com.periodicals.utils.resourceHolders.JdbcQueriesHolder;
 

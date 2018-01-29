@@ -1,8 +1,8 @@
 package com.periodicals.servlet;
 
-import com.periodicals.command.util.Command;
-import com.periodicals.command.util.CommandFactory;
-import com.periodicals.command.util.CommandResult;
+import com.periodicals.commands.util.Command;
+import com.periodicals.commands.util.CommandFactory;
+import com.periodicals.commands.util.CommandResult;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -18,8 +18,8 @@ import static com.periodicals.utils.resourceHolders.AttributesHolder.COMMAND;
  * @author Daniel Vlnitsky
  * <p>
  * Application main servlet responsible for:
- * 1. Obtaining command from incoming request
- * 2. Executing command
+ * 1. Obtaining commands from incoming request
+ * 2. Executing commands
  * 3. Redirecting request further by parameters obtained from CommandResult object
  * @see CommandResult
  */
@@ -55,7 +55,7 @@ public class Dispatcher extends HttpServlet {
     }
 
     /**
-     * @return command obtained from request attribute or default command if there is none
+     * @return commands obtained from request attribute or default commands if there is none
      */
     private String getCommandNameFromRequest(HttpServletRequest request) {
         String commandName = (String) request.getAttribute(COMMAND);

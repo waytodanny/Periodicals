@@ -4,7 +4,7 @@ import com.periodicals.entities.*;
 import com.periodicals.services.entities.PeriodicalService;
 import com.periodicals.services.entities.UserService;
 import org.junit.jupiter.api.*;
-import util.H2Manager;
+import util.H2ConnectionManager;
 
 import java.math.BigDecimal;
 import java.sql.SQLException;
@@ -18,15 +18,17 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 class SubscriptionServiceTest {
-    private static final H2Manager testDbManager = H2Manager.getInstance();
+    private static final H2ConnectionManager testDbManager = H2ConnectionManager.getInstance();
     private static final PeriodicalService mockPeriodicalService = mock(PeriodicalService.class);
     private static final String INSERT_DEFAULTS_FILE_PATH =
             "src\\test\\resources\\mySQL_Insert_Defaults1.sql";
+
     private static final Role ADMIN_ROLE = new Role(
             UUID.fromString("89179577-feb1-11e7-a9e6-e35467cb8f58"),
             "admin"
     );
     private static final User EXISTING_USER = new User();
+
     private static final Genre GENRE_COMICS = new Genre(
             UUID.fromString("c1fae08d-feb1-11e7-8e6b-313d4bf1847c"),
             "comics"
@@ -37,12 +39,14 @@ class SubscriptionServiceTest {
     );
     private static final Periodical PERIODICAL_GAMBIT = new Periodical();
     private static final Periodical PERIODICAL_WOLVERINE = new Periodical();
+
     private static UserService mockUserService = mock(UserService.class);
+
     private static SubscriptionService subscriptionService;
 
     @BeforeAll
     static void beforeAll() {
-        H2Manager.initH2ConnectionPool();
+        H2ConnectionManager.initH2ConnectionPool();
 
         EXISTING_USER.setId(UUID.fromString("1f940bd3-f7a5-11e7-93e6-a30f6152aa28"));
         EXISTING_USER.setLogin("user");
@@ -71,7 +75,7 @@ class SubscriptionServiceTest {
 
     @AfterAll
     static void afterAll() {
-        H2Manager.releaseDataSource();
+        H2ConnectionManager.releaseDataSource();
         subscriptionService = null;
     }
 

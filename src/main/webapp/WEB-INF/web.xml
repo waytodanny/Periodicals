@@ -44,7 +44,7 @@
     </servlet-mapping>
 
     <listener>
-        <listener-class>com.periodicals.servlet.ContextListener</listener-class>
+        <listener-class>com.periodicals.listeners.ContextListener</listener-class>
     </listener>
 
     <error-page>

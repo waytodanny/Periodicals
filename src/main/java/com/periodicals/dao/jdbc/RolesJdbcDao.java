@@ -2,7 +2,7 @@ package com.periodicals.dao.jdbc;
 
 import com.periodicals.dao.interfaces.lookup.RolesDao;
 import com.periodicals.entities.Role;
-import com.periodicals.exceptions.DaoException;
+import com.periodicals.utils.exceptions.DaoException;
 import com.periodicals.utils.propertyManagers.AttributesPropertyManager;
 import com.periodicals.utils.resourceHolders.JdbcQueriesHolder;
 

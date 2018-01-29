@@ -301,15 +301,15 @@ ERROR - Failed to get objects from DB: java.lang.NullPointerException
 ERROR - Failed to get objects from DB: java.lang.NullPointerException
 ERROR - Failed to get objects from DB: java.lang.NullPointerException
 ERROR - Failed to get objects from DB: java.lang.NullPointerException
-ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
-ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.utils.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.utils.exceptions.DaoException: No object founded by given params
 ERROR - Failed to get objects from DB: java.lang.NullPointerException
-ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
-ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
-ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
-ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
-ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
-ERROR - Failed to get objects from DB: com.periodicals.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.utils.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.utils.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.utils.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.utils.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.utils.exceptions.DaoException: No object founded by given params
+ERROR - Failed to get objects from DB: com.periodicals.utils.exceptions.DaoException: No object founded by given params
 ERROR - Failed to get objects from DB: null
 ERROR - java.lang.NullPointerException
 ERROR - Failed to get objects from DB: Параметр "#1" не установлен
@@ -364,3 +364,38 @@ ERROR - Failed to get objects from DB: Column 'id' in where clause is ambiguous
 ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"
 Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"; SQL statement:
 INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - Failed to process DB updating: Нарушение ссылочной целостности: "CONSTRAINT_479: PUBLIC.PERIODICALS FOREIGN KEY(GENRE_ID) REFERENCES PUBLIC.GENRES(ID) ('c1fae08d-feb1-11e7-8e6b-313d4bf1847c')"
+Referential integrity constraint violation: "CONSTRAINT_479: PUBLIC.PERIODICALS FOREIGN KEY(GENRE_ID) REFERENCES PUBLIC.GENRES(ID) ('c1fae08d-feb1-11e7-8e6b-313d4bf1847c')"; SQL statement:
+DELETE FROM genres WHERE id = ?; [23503-196]
+ERROR - Failed to process DB updating: Нарушение ссылочной целостности: "CONSTRAINT_479: PUBLIC.PERIODICALS FOREIGN KEY(GENRE_ID) REFERENCES PUBLIC.GENRES(ID) ('c1fae08d-feb1-11e7-8e6b-313d4bf1847c')"
+Referential integrity constraint violation: "CONSTRAINT_479: PUBLIC.PERIODICALS FOREIGN KEY(GENRE_ID) REFERENCES PUBLIC.GENRES(ID) ('c1fae08d-feb1-11e7-8e6b-313d4bf1847c')"; SQL statement:
+DELETE FROM genres WHERE id = ?; [23503-196]
+ERROR - User with login user has not been verified
+ERROR - User with login user has not been verified
+ERROR - User with login user has not been verified
+ERROR - No object founded by given params
+ERROR - User with login user has not been verified
+ERROR - No object founded by given params
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - User with login user has not been verified
+ERROR - No object founded by given params
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - User with login user has not been verified
+ERROR - No object founded by given params
+ERROR - User with login user has not been verified
+INFO - User user entered as an admin
+INFO - User user entered as an admin
+INFO - User user entered as an admin
+INFO - User user entered as an admin
+ERROR - Failed to insert data to DB: org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"
+Unique index or primary key violation: "PRIMARY_KEY_7 ON PUBLIC.GENRES(ID) VALUES ('d74ec6d5-feb1-11e7-982f-25e096a99612', 39)"; SQL statement:
+INSERT INTO genres (id, name) VALUES (?,?); [23505-196]
+ERROR - User with login user has not been verified
+ERROR - No object founded by given params

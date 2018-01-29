@@ -1,8 +1,8 @@
 package com.periodicals.dao.transactions;
 
-import com.periodicals.exceptions.DaoException;
-import com.periodicals.exceptions.ServiceException;
-import com.periodicals.exceptions.TransactionException;
+import com.periodicals.utils.exceptions.DaoException;
+import com.periodicals.utils.exceptions.ServiceException;
+import com.periodicals.utils.exceptions.TransactionException;
 
 import java.sql.Connection;
 import java.sql.SQLException;

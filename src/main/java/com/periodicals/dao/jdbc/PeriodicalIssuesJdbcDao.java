@@ -5,7 +5,7 @@ import com.periodicals.entities.Genre;
 import com.periodicals.entities.Periodical;
 import com.periodicals.entities.PeriodicalIssue;
 import com.periodicals.entities.Publisher;
-import com.periodicals.exceptions.DaoException;
+import com.periodicals.utils.exceptions.DaoException;
 import com.periodicals.utils.propertyManagers.AttributesPropertyManager;
 import com.periodicals.utils.resourceHolders.JdbcQueriesHolder;
 
