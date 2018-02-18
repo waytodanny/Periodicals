@@ -7,6 +7,7 @@ import com.periodicals.utils.propertyManagers.AttributesPropertyManager;
  */
 public class AttributesHolder {
     public static final String ATTR_COMMAND = "commands";
+    public static final String ATTR_PAGE = AttributesPropertyManager.getProperty("attr.page");
 
     public static final String SERVLET_ROOT = AttributesPropertyManager.getProperty("servlet.root");
 

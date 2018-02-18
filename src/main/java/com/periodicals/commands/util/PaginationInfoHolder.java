@@ -3,7 +3,7 @@ package com.periodicals.commands.util;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-import static sun.plugin.dom.css.CSSConstants.ATTR_PAGE;
+import static com.periodicals.utils.resourceHolders.AttributesHolder.ATTR_PAGE;
 
 /**
  * @author Daniel VOlnitsky

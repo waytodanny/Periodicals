@@ -41,6 +41,11 @@ public class Dispatcher extends HttpServlet {
         this.dispatch(request, response);
     }
 
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.service(req, resp);
+    }
+
     /**
      * Main dispatching method for all types of methods
      */
